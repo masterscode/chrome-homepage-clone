@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    transition: all ease .34s;
+}
+form{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+}
+form div{
+    margin: 5px auto;
+}
+input{
+    display: inline-block;
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+    border: solid thin lightgrey;
+}
+
+button[type='submit']{
+    border:none;
+    display: block;
+    padding: 15px;
+    border-radius: 3px;
+    width: 100%;
+    background: yellowgreen;
+    font-weight: bolder;
+}
+
+.error{
+    color: tomato;
+    font-size: small;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+}
