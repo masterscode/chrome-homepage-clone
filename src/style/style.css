@@ -1,0 +1,127 @@
+:root {
+  --primary-color:#292a2d;
+  --secondary-color:rgba(241, 243, 244, 1);
+  --secondary-color-light: rgba(241, 243, 244, .15);
+  --accent-color: #1a73e8;
+}
+
+@font-face {}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Roboto, Arial, Ubuntu, sans-serif;
+  background-color: var(--primary-color);
+}
+
+.bookmarks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  margin: 1rem auto;
+  background: transparent;
+}
+
+.bookmark {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: transparent;
+  transition: all ease 0.2s;
+  padding: 0.5rem 0;
+}
+.bookmark:hover {
+  background-color: var(--secondary-color-light);
+  cursor: pointer;
+}
+.bookmark:hover .bookmark__action-launcher {
+  visibility: visible;
+  color: var(--secondary-color);
+}
+.bookmark__icon {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.5rem;
+}
+.bookmark__icon img {
+  width: 70%;
+}
+.bookmark__title {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.bookmark__action-launcher {
+  visibility: hidden;
+  position: absolute;
+  font-size: 1.5rem;
+  top: 0.15rem;
+  background: none;
+  right: 0.15rem;
+  border: none;
+  outline: none;
+  overflow: hidden;
+}
+.bookmark__action-launcher svg {
+  fill: #d4dbde;
+  width: 1rem;
+  height: 2rem;
+  transition: fill ease 0.3s;
+}
+.bookmark__action-launcher svg:hover {
+  fill: white;
+}
+
+.logo {
+  color: var(--secondary-color);
+  font-size: 7.5rem;
+  width: fit-content;
+  margin: auto;
+  padding: 2.5rem;
+}
+
+.search-field {
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  background-color: #f1f3f4;
+  margin: 3rem auto;
+  box-shadow: 0.1rem 0.1rem 0.7rem #292a2d;
+  padding: 0 1.5rem;
+}
+.search-field .icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #7f818a;
+}
+.search-field input {
+  outline: none !important;
+  border: none;
+  padding: 1.5rem 1rem;
+  background: none;
+  font-size: 1.5rem;
+  display: inline-block;
+  flex: 0 0 90%;
+}
+.search-field input::placeholder {
+  color: #657881;
+}
+
+/*# sourceMappingURL=style.css.map */

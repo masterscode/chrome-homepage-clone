@@ -1,0 +1,6 @@
+*, *::before, *::after{box-sizing: border-box;}
+:root{font-size: 62.5%;}
+body{
+  font-family: Roboto, Arial, Ubuntu,  sans-serif;
+  background-color: var(--primary-color );
+}

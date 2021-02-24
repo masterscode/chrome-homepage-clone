@@ -1,0 +1,33 @@
+.search-field{
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  background-color: $secondary-color;
+  margin: 3rem auto;
+  box-shadow: .1rem .1rem .7rem $primary-color;
+  padding: 0 1.5rem;
+
+
+
+  .icon{
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: lighten($primary-color, 35%);
+
+  }
+  input{
+    outline: none !important;
+    border: none;
+    padding: 1.5rem 1rem;
+    background: none;
+    font-size: 1.5rem;
+    display: inline-block;
+    flex: 0 0 90%;
+
+
+    &::placeholder{color: darken($secondary-color, 50%)}
+  }
+
+}
