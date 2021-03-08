@@ -1,11 +1,11 @@
 .bookmarks {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 40%;
   margin: 1rem auto;
   background: transparent;
-
+  flex-wrap: wrap;
 }
 
 .bookmark {
@@ -61,6 +61,10 @@
     border: none;
     outline: none;
     overflow: hidden;
+
+    &:hover{
+      cursor: pointer;
+    }
 
       svg{
         fill: darken($secondary-color, 10%);

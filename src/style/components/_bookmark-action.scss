@@ -1,21 +1,26 @@
-.bookmark-action{
+.bookmark-action {
   position: absolute;
-  width: 100%;
-  box-shadow: .2rem .4rem 1rem var(--secondary-color);
+  width: 20rem;
+  top: .1rem;
+  background-color: #fff;
+  box-shadow: .1rem .1rem .5rem var(--secondary-color);
   transition: all ease-in-out .3s;
   padding: .5rem 0;
+  border-radius: .3rem;
 
-  .action{
+  .action {
     text-align: center;
     padding: .5rem 1.5rem;
     background-color: transparent;
     transition: all ease-out .3s;
     text-transform: capitalize;
+    font-size: 1.1rem;
+    color: var(--primary-color);
 
 
-    &:hover{
+    &:hover {
       cursor: pointer;
-      background-color: var(--primary-color);
+      background-color: darken($secondary-color, 20%);
     }
   }
 }

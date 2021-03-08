@@ -1,0 +1,11 @@
+.modal-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lighten($secondary-color, 90%);
+  z-index: 100;
+  margin: 0;
+  padding: 10rem;
+}
