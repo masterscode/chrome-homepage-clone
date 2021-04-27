@@ -1,6 +1,18 @@
-*, *::before, *::after{box-sizing: border-box;}
-:root{font-size: 62.5%;}
-body{
-  font-family: Roboto, Arial, Ubuntu,  sans-serif;
-  background-color: var(--primary-color );
+*, *::before, *::after {
+  box-sizing: border-box;
+  transition: all linear .35s;// had to force apply transiton to all component
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Roboto, Arial, Ubuntu, sans-serif;
+  background-color: var(--primary-color);
+}
+body::-webkit-scrollbar{
+  width: 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
 }

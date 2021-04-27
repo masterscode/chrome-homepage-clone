@@ -2,10 +2,10 @@ import React from "react";
 import solid from "../svg/sprites/solid.svg";
 import BookmarkAction from "./Boomark-Action";
 
-const Bookmark = ({title, address, favicon, action, clickHandler, index, handleRemove, bookmark}) => {
+const Bookmark = ({title, address, favicon, action, clickHandler, handleRemove, bookmark}) => {
     return <>
         <div className="bookmark" >
-            <button className="bookmark__action-launcher" onClick={()=>clickHandler(index)}>
+            <button className="bookmark__action-launcher" onClick={()=>clickHandler(bookmark)}>
                 <svg>
                     <use xlinkHref={`${solid}#ellipsis-v`}> </use>
                 </svg>
@@ -16,7 +16,6 @@ const Bookmark = ({title, address, favicon, action, clickHandler, index, handleR
             </a>
             <div className="bookmark__title"> {title}</div>
         </div>
-
     </>
 }
 

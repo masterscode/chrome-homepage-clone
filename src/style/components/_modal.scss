@@ -1,11 +1,30 @@
 .modal-container{
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
+  position: absolute;
+  top: 1px;
   justify-content: center;
   align-items: center;
-  background: lighten($secondary-color, 90%);
-  z-index: 100;
+  background: rgba($primary-color, .16);
+  z-index: 1;
   margin: 0;
+  border-radius: 1rem;
   padding: 10rem;
+
+  .modal{
+    background: lighten($secondary-color, 50%);
+    border-radius: .5rem;
+    padding: .5rem  5rem;
+    flex: 0 0 45%;
+
+
+    &-header{
+      font-size: 1.6rem;
+      text-transform: capitalize;
+      margin: 1.5rem auto;
+    }
+
+
+  }
 }
